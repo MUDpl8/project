@@ -10,13 +10,14 @@
 </head>
 <body>
     <header>
-
-    </header>
-
+        Witamy na stronie 
+        <div id = "name"></div>
     <script>
-        let name = prompt("Podaj swoje imię:");
-        let scndname = prompt("Podaj swoje nazwisko:");
+        let name = prompt("Podaj swoje imię i nazwisko:");
         alert("Witamy na stronie!");
+        document.getElementById("name").innerHTML = name;
     </script>
+    
+    </header>
 </body>
 </html>
