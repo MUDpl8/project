@@ -5,19 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            font-size:20px;
+            background-image:url("Foto/BgIndex.png");
+            background-position:top;
+            background-repeat:no-repeat;
+            background-color:blanchedalmond;
+        }
+        
+        header {
+            font-size:25px;
+            margin:25px;
+        }
 
+        #linksTitle {
+            font-size:24px;
+            margin:30px;
+        }
     </style>
 </head>
 <body>
     <header>
-        Witamy na stronie 
+        Witaj na stronie 
         <div id = "name"></div>
     <script>
         let name = prompt("Podaj swoje imię i nazwisko:");
         alert("Witamy na stronie!");
         document.getElementById("name").innerHTML = name;
     </script>
-    
     </header>
+    <div id = "linksTitle">
+        Odnośniki do podstron:
+        <div id = "links">
+            <ul>
+                <li><a href = "Files/">O mnie</a></li>
+                <li><a href = "Files/">Galeria</a></li>
+                <li><a href = "Files/">Formularz</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
