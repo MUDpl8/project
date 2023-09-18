@@ -32,25 +32,36 @@
             text-decoration:none;
             color:rgb(245, 105, 128);
         }
+
+        fieldset {
+            background-color:rgb(255, 235, 190);
+        }
+        #form {
+            margin:5px 20px 5px 20px;
+        }
     </style>
 </head>
 <body>
     <hader>
         <form>
         <fieldset>
+        <legend>Formularz kontaktowy</legend>
+        <div id = "form">
             <label>Imię:</label>
             <input type = "text" name = "name"> <br>
             <label>Nazwisko</label>
             <input type = "text" name = "scndname"> <br>
             <label>Dtata urodzenia:</label>
             <input type = "date" name = "date"> <br>
-            <label>Płeć:</label> <br>
+            <label>Płeć:</label>
             <label>M:</label>
             <input type = "radio" name = "gender" value = "M">
             <label>K:</label>
             <input type = "radio" name = "gender" value = "K"> <br>
             <label>Nr telefonu</label>
-            <input type = "text" name = "phnumer">
+            <input type = "text" name = "phnumer"> <br>
+            <input type = "button" value = "Wyslij">
+        </div>
         </fieldset>
         </form>
     </hader>
