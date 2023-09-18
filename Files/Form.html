@@ -48,22 +48,32 @@
         <legend>Formularz kontaktowy</legend>
         <div id = "form">
             <label>Imię:</label>
-            <input type = "text" name = "name"> <br>
+            <input type = "text" name = "name" id = "name"> <br>
             <label>Nazwisko</label>
-            <input type = "text" name = "scndname"> <br>
+            <input type = "text" name = "scndname" id = "scndname"> <br>
             <label>Dtata urodzenia:</label>
-            <input type = "date" name = "date"> <br>
+            <input type = "date" name = "date" id = "date"> <br>
             <label>Płeć:</label>
             <label>M:</label>
-            <input type = "radio" name = "gender" value = "M">
+            <input type = "radio" name = "gender" id = "gender" value = "M">
             <label>K:</label>
-            <input type = "radio" name = "gender" value = "K"> <br>
+            <input type = "radio" name = "gender" id = "gender" value = "K"> <br>
             <label>Nr telefonu</label>
-            <input type = "text" name = "phnumer"> <br>
+            <input type = "text" name = "phnumer" id = "phnumer"> <br>
             <input type = "button" value = "Wyslij">
         </div>
         </fieldset>
         </form>
+    <script>
+        var name = document.getElementById("name");
+        var scndname = document.getElementById("scndname");
+        var date = document.getElementById("date");
+        var gender = document.getElementById("gender");
+        var phnumer = document.getElementById("phnumber");
+        if(name != null && scndname != null && date != null && gender != null && phnumber != null) {
+            if()
+        }
+    </script>
     </hader>
 </body>
 </html>
