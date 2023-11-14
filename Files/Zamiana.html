@@ -112,7 +112,10 @@
         <script>
             function change1(){
                 var list1 = [];
-                var a = document.getElementById("number1").innerHTML;
+                var a = document.getElementById("number1").value;
+                if(a == 0){
+                    list1 = [0]
+                }
                 while(a > 0){
                     if(a % 2 == 0){
                         list1.push(0);
@@ -123,7 +126,8 @@
                         a = (a - 1) / 2;
                     }
                 }
-                document.getElementById("out1").innerHTML = list1;
+                list1.reverse();
+                document.querySelector("#out1").innerHTML = list1;
             }
         </script>
     </div>
