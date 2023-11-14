@@ -72,6 +72,18 @@
             font-size:120%;
             transition:1.5s;
         }
+
+        #change1{
+            background-color:grey;
+            width:50%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        #number1{
+            margin-left:auto;
+            margin-right:auto;
+        }
     </style>
 </head>
 <body>
@@ -93,7 +105,27 @@
         </div>
     </div>
     <div id = "change1">
+        Zamiana liczby dziesiętnej na dwójkową:
         <input type = "number" id = "number1">
+            <button onClick = "change1()">Wykonaj</button>
+        <div id = "out1"></div>
+        <script>
+            function change1(){
+                var list1 = [];
+                var a = document.getElementById("number1").innerHTML;
+                while(a > 0){
+                    if(a % 2 == 0){
+                        list1.push(0);
+                        a = a / 2;
+                    }
+                    else if(a % 2 == 1){
+                        list1.push(1);
+                        a = (a - 1) / 2;
+                    }
+                }
+                document.getElementById("out1").innerHTML = list1;
+            }
+        </script>
     </div>
 </body>
 </html>
